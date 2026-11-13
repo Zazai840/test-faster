@@ -23,3 +23,15 @@ _Avoid_: Goal, purpose, PR summary
 **Project intent**:
 What the codebase as a whole is for and the rules it lives by, as stated in its CLAUDE.md, ADRs, glossary, and README.
 _Avoid_: Conventions, standards, vision
+
+**Baseline**:
+An existing safeguard the gate is measured against on the same changes: no-mistakes, CI, or an E2E suite.
+_Avoid_: Competitor, reference tool
+
+**Catch rate**:
+The share of buggy changes where the verdict is _block_ and a finding points at the real bug.
+_Avoid_: Recall, detection rate, accuracy
+
+**False-block rate**:
+The share of clean changes where the verdict is _block_.
+_Avoid_: False-positive rate, noise
