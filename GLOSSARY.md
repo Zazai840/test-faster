@@ -16,6 +16,10 @@ _Avoid_: Result, status, score
 One concrete problem the gate reports, with a location, a severity, and evidence.
 _Avoid_: Issue, warning, comment
 
+**Seal**:
+The boundary the gate runs a change's code inside: nothing inside it can reach anything the gate did not start itself.
+_Avoid_: Sandbox, offline mode, no-network
+
 **Change intent**:
 What one specific change set out to do, as stated in its PR description or linked issue.
 _Avoid_: Goal, purpose, PR summary
